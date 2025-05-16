@@ -19,15 +19,16 @@ int third(int football, float meters){
 
 int main (){
 
-    int Yes = 0;
     int No = 0;
-    while(Yes = 1, No = 2){
+    do{
 
-    int pounds = 0;
+    cout<<"\n";
+    cout<<"*START*\n";
+
+    float pounds = 0;
     double stone = 0.07142857;
 
     cout<<"Part #1 'How many stones now!?'\n";
-    
     cout<<"You left your weight scale on pounds to stones, and the scale refuses to revert itself to the proper measurements.\n";
     cout<<"Input the amount of pounds you weigh, to get your weight in stones.\n";
     cin>>pounds;
@@ -58,13 +59,18 @@ int main (){
     cout<<"Once you entered the amount of football fields you have ran, it will be converted into meters.\n";
     cin>>football;
     if(football <=0){
-        cout<<"Sorry, you can't run 0 or negative football fields, please try again.\n";
+        cout<<"You decided to opt out of this task.\n";
     }else{
         cout<<"You ran "<<third(football, meters)<<" meters, impressive but do you think you can do better?\n";
     }
-    cout<<"____________________________________________________________________________________________________________________________________________________________\n";
-    
-    }
+    cout<<"|RESULTS|\n";
+    cout<<"All in all you weigh "<<first(pounds, stone)<<" stones, "<<second(feet, centimeter)<<" centimeters tall, and can run "<<third(football, meters)<<" meters.\n";
+    cout<<"\n";
+    cout<<"To end this program input 1, or to restart press 2.\n";
 
-
+    cin>>No;
+  }
+  while(No > 1);
+  return 0;
 }
+
