@@ -63,9 +63,7 @@ int main (){
         cout<<"You ran "<<third(football, meters)<<" meters, impressive but do you think you can do better?\n";
     }
     cout<<"____________________________________________________________________________________________________________________________________________________________\n";
-
-//Each part will connect into one whole story with a unique about at the end, also ask if user wants to experience the secret ending with an if condition and make the while loop there
-
+    
     }
 
 
