@@ -1,19 +1,19 @@
 //Created by Owen Martin
 //Date: 5/14/25
-//Description: 
+//Description: Recreation of Project #1 that has been expanded to include functions, while loop for whole program itself, and if statement for a unique message *DRAFT*
 
 #include <iostream>
-using namespace std;
+using namespace std; //Below are all functions that do the math within int main, less cluttered code
 
-int first(int pounds, double stone){
+int first(int pounds, double stone){ //Function for Part #1
     return pounds*stone;
 }
 
-int second(int feet, float centimeter){
+int second(int feet, float centimeter){ //Function for Part #2
     return feet*centimeter;
 }
 
-int third(int football, float meters){
+int third(int football, float meters){ //Function for Part #3
     return football*meters;
 }
 
