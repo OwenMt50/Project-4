@@ -1,6 +1,6 @@
 //Created by Owen Martin
 //Date: 5/14/25
-//Description: Recreation of Project #1 that has been expanded to include functions, while loop for whole program itself, and if statement for a unique message *DRAFT*
+//Description: Recreation of Project #1 that has been expanded to include functions, while loop for whole program itself, and if statement for a unique message 
 
 #include <iostream>
 using namespace std; //Below are all functions that do the math within int main, less cluttered code
@@ -96,6 +96,6 @@ int main (){
 
   while(No > 1); //if user inputs a 1 while loop ends, but if user enters 2 then the loop restarts to beginning
   return 0;
-  
+
 }
 
