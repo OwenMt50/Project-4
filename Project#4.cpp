@@ -27,7 +27,12 @@ int main (){
 
     int pounds = 0;
     float stone = 0.071; //Variables for Part #1
+    int proceed = 1;
+    
 
+    cout<<"*DISCLAIMER* This is entire program is for fun, please do not take it seriously nor feel obligated to tell the truth\n";
+    cout<<"\n";
+    
     cout<<"Part #1 'How many stones now!?'\n"; //Part #1 intro
     cout<<"You left your weight scale on pounds to stones, and the scale refuses to revert itself to the proper measurements.\n";
     cout<<"Input the number of pounds you weigh to get your weight in stones.\n";
@@ -85,8 +90,53 @@ int main (){
     if(pounds <= 0, feet <= 0, football <=0){
         cout<<"It appears that you weigh "<<first(pounds, stone)<<" stones, "<<second(feet, centimeter)<<" centimeters tall, and ran "<<third(football, meters)<<" meters!?.\n";
         cout<<"Hmm, you entered zero for everything didn't you?\n";
+        cout<<"SYSTEM SHUTTING DOWN...\n";
+        return 1;
     }else{
         cout<<"All in all you weigh "<<first(pounds, stone)<<" stones, "<<second(feet, centimeter)<<" centimeters tall, and can run "<<third(football, meters)<<" meters.\n"; 
+    }
+    cout<<"\n";
+    cout<<"________________________\n";
+    cout<<"|Extra: 'Did you know?'|\n";
+    cout<<"‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\n";
+    cout<<"\n";
+
+    cout<<"Part #1\n";
+    cout<<"Did you know the average weight of an American adult is 185.3 pounds?\n";
+    cout<<"In stones this average is 13.16, when compared to your weight of "<<first(pounds, stone)<<" stones you are ";
+    if((pounds, stone) < 13.16){
+        cout<<"over the national average.\n";
+    }else if((pounds, stone) > 13.16){
+        cout<<"below the national average.\n";
+    }
+
+    cout<<"Press 1 to proceed to part #2\n";
+    cin>>proceed;
+    cout<<"\n";
+
+    cout<<"Part #2\n";
+    cout<<"Did you know the tallest person on Earth was a man named Robert Wadlow?\n";
+    cout<<"He towered about 8'11, however since we cannot use inches here we will consider him 9 feet tall (assuming he's wearing his everyday shoes).\n";
+    cout<<"When converting his height from 9ft, Wadlow would be "<<9*centimeter<<" centimeters tall, which of course is pretty tall.\n";
+    if((feet, centimeter) < 274){
+        cout<<"And since you measured over 274.32 centimeters, you are now the newest tallest person in recorded history!\n";
+    }else if((feet, centimeter) = 274){
+        cout<<"You measure the exact same height, which makes the tallest person in history a tie between you and Robert Wadlow!\n";
+    }else if((feet, centimeter) > 274){
+        cout<<"And since you measured below 274.32 centimeters, Robert Wadlow is still the tallest person in history.\n";
+    }
+    cout<<"Press 1 to proceed to part #3\n";
+    cin>>proceed;
+    cout<<"\n";
+
+    cout<<"Part #3\n";
+    cout<<"Did you know that the longest route from the West coast to the East coast of the United States is 3,527 miles?\n";
+    cout<<"This is approxitmately 5,676,156 meters when converting miles to meters.\n";
+    cout<<"Which comparing to your run length of "<<third(football, meters)<<" meters ";
+    if((football, meters) < 5676156){
+        cout<<", makes you a better runner than Forest Gump's multi-marathon from East to West coasts of the United States!\n";
+    }else if((football, meters) > 5676156){
+        cout<<", makes you a good runner, however not as good as fiction's best marathon runner, Forest Gump, and some say he just keeps on running to this day.\n";
     }
 
     cout<<"\n"; //space for separating last question
@@ -96,6 +146,7 @@ int main (){
 
   while(No > 1); //if user inputs a 1 while loop ends, but if user enters 2 then the loop restarts to beginning
   return 0;
+
 
 }
 
