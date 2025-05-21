@@ -93,7 +93,9 @@ int main (){
     cout<<"To end this program input 1, or to restart press 2.\n";
     cin>>No;
   }
+
   while(No > 1); //if user inputs a 1 while loop ends, but if user enters 2 then the loop restarts to beginning
   return 0;
+  
 }
 
