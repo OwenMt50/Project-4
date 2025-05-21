@@ -26,7 +26,7 @@ int main (){
     cout<<"*START*\n"; //Adds space and an explicit message that the program started (mainly incase user does decide to restart loo)
 
     int pounds = 0;
-    double stone = 0.07142857; //Variables for Part #1
+    float stone = 0.071; //Variables for Part #1
 
     cout<<"Part #1 'How many stones now!?'\n"; //Part #1 intro
     cout<<"You left your weight scale on pounds to stones, and the scale refuses to revert itself to the proper measurements.\n";
